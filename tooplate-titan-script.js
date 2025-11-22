@@ -98,6 +98,8 @@ updateActiveMenuItem();
 // Timeline functionality
 function initTimeline() {
     const timelineItems = document.querySelectorAll('.timeline-item');
+    timelineItems.forEach(item => item.classList.add('visible'));
+
     const timelineProgress = document.querySelector('.timeline-progress');
     const timelineFilters = document.querySelectorAll('.timeline-filter');
     
